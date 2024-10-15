@@ -1,0 +1,97 @@
+<!-- activity_doctor.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Page"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Dashboard -->
+    <LinearLayout
+        android:id="@+id/dashboardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="20dp">
+
+        <!-- Doctor Information -->
+        <TextView
+            android:id="@+id/doctorNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Name: Aishu"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/doctorSpecializationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Specialization: Neurologist"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/doctorDegreeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Degree: MD"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Add more information fields as needed -->
+
+    </LinearLayout>
+
+    <!-- Virtual Consultation Button -->
+    <Button
+        android:id="@+id/virtualConsultationButton"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dashboardLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:onClick="onVirtualConsultationButtonClick"
+        android:text="Virtual Consultation" />
+
+    <!-- Physical Consultation Button -->
+    <Button
+        android:id="@+id/physicalConsultationButton"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/virtualConsultationButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="onPhysicalConsultationButtonClick"
+        android:text="Physical Consultation" />
+
+    <!-- Bottom Navigation Panel -->
+    <LinearLayout
+        android:id="@+id/bottomNavigationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <!-- Add more bottom navigation items if needed -->
+
+        <!-- Example Bottom Navigation Item -->
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"/>
+
+        <!-- Add other buttons here -->
+
+    </LinearLayout>
+
+</RelativeLayout>

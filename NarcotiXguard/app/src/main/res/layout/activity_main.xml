@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:paddingLeft="16dp"-->
+<!--    android:paddingTop="16dp"-->
+<!--    android:paddingRight="16dp"-->
+<!--    android:paddingBottom="16dp"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/splashLogo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/logo"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:visibility="invisible" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/patientButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Patient Registration" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/doctorButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/patientButton"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Doctor Registration" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/guardianButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/doctorButton"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Guardian Registration" />-->
+
+<!--</RelativeLayout>-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    > <!-- Set a light background color -->
+
+    <!-- Stylish Logo -->
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:background="@drawable/rounded_border"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+    <!-- Patient Registration Button -->
+    <Button
+        android:id="@+id/patientButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashLogo"
+        android:text="Patient Registration"
+        android:background="#4285F4"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:layout_marginTop="24dp" /> <!-- Increase top margin for separation -->
+
+    <!-- Doctor Registration Button -->
+    <Button
+        android:id="@+id/doctorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patientButton"
+        android:layout_marginTop="16dp"
+        android:text="Doctor Registration"
+        android:background="#34A853"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+        />
+
+</RelativeLayout>

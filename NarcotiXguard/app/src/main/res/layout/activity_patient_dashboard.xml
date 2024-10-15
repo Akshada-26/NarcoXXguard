@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<!-- User Profile Section -->
+    <TextView
+        android:id="@+id/tvPatientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Name"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: "
+        android:textSize="18sp"
+        android:layout_below="@id/tvPatientName"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile: "
+        android:textSize="18sp"
+        android:layout_below="@id/tvAge"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvAddictionDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Addiction Details: "
+        android:textSize="18sp"
+        android:layout_below="@id/tvMobile"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvDrugType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drug Type: "
+        android:textSize="18sp"
+        android:layout_below="@id/tvAddictionDetails"
+        android:layout_marginTop="10dp" />
+
+<!-- Action Buttons Section -->
+<LinearLayout
+    android:id="@+id/actionButtonsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tvDrugType"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="16dp">
+
+    <Button
+        android:id="@+id/btnMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Schedule Meeting"
+        android:onClick="onMeetingButtonClick"/>
+
+    <Button
+        android:id="@+id/btnPrescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Prescription"
+        android:onClick="onPrescriptionButtonClick"/>
+
+    <Button
+        android:id="@+id/btnPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Make Payment"
+        android:onClick="onPaymentButtonClick"/>
+
+</LinearLayout>
+
+<!-- Navigation Menu -->
+<LinearLayout
+    android:id="@+id/navigationMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Home"
+        android:onClick="onHomeButtonClick"/>
+
+    <Button
+        android:id="@+id/btnDashboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Dashboard"
+        android:onClick="onDashboardButtonClick"/>
+</LinearLayout>
+
+</RelativeLayout>

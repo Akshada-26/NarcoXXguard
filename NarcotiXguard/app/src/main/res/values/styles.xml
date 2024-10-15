@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Button Style -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Navigation Button Style -->
+    <style name="NavButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/nav_button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+</resources>

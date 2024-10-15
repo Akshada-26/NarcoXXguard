@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/minutesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Minutes"
+            android:inputType="number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/secondsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seconds"
+            android:inputType="number"
+            android:layout_below="@id/minutesEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondsEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/time_remaining_00_00"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/startStopButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timerTextView"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:text="Start Timer"
+            android:textColor="@android:color/black"
+            android:onClick="onStartStopButtonClick"/>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/startStopButton"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/webView"
+            android:layout_marginTop="25dp"
+            android:textSize="50px"
+            android:text="Meditation offers a myriad of benefits for both the mind and body. Here's why it's helpful:
+
+Stress Reduction: Meditation triggers the relaxation response, which counteracts the body's stress response. It helps lower cortisol levels, reducing stress and anxiety.
+
+Improved Focus and Concentration:
+
+Emotional Well-being:
+Enhanced Self-awareness:
+Better Sleep:
+Pain Management:
+Increased Compassion and Empathy: Certain meditation practices, like loving-kindness meditation, promote feelings of compassion, empathy, and interconnectedness with others.
+
+Lower Blood Pressure: Regular practice of meditation has been linked to lower blood pressure, reducing the risk of cardiovascular disease.
+
+Improved Cognitive Function: Meditation may enhance cognitive functions such as memory, creativity, and problem-solving skills by promoting neuroplasticity and increasing grey matter density in certain brain regions.
+
+Spiritual Growth: For many, meditation serves as a pathway to spiritual growth, providing a deeper connection with oneself, others, and the universe."/>
+
+    </RelativeLayout>
+</ScrollView>

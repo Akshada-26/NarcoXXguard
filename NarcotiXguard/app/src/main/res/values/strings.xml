@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NarcotiXguard</string>
+    <string name="timer_format">%d seconds remaining</string>
+    <string name="start_timer" />
+    <string name="stop_timer" />
+    <string name="register">Register</string>
+    <string name="name">name</string>
+    <string name="specialization">specialization</string>
+    <string name="degree">degree</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="time_remaining_00_00">Time Remaining: 00:00</string>
+</resources>

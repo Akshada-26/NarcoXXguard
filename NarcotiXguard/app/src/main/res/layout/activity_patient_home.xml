@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<!-- Image Display -->
+<ImageView
+    android:id="@+id/mainImage"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/image1"
+    android:layout_marginBottom="16dp"/>
+
+<!-- Doctor Button -->
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/doctorButton"
+    style="@style/ButtonStyle"
+    android:text="Doctor"
+    android:layout_below="@id/mainImage"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="16dp"
+    android:onClick="onDoctorButtonClick"/>
+
+
+<!-- Activity Button -->
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/activityButton"
+    style="@style/ButtonStyle"
+    android:text="Activity"
+    android:layout_below="@id/mainImage"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="8dp"
+    android:onClick="onActivityButtonClick"/>
+
+<!-- Awareness Button -->
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/awarenessButton"
+    style="@style/ButtonStyle"
+    android:text="Awareness"
+    android:layout_below="@id/mainImage"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:onClick="onAwarenessButtonClick"/>
+
+<!-- Bottom Navigation Menu -->
+    <LinearLayout
+        android:id="@+id/navigationMenuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"
+            android:onClick="onHomeButtonClick"/>
+
+        <Button
+            android:id="@+id/btnDashboard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dashboard"
+            android:onClick="onDashboardButtonClick"/>
+    </LinearLayout>
+
+</RelativeLayout>

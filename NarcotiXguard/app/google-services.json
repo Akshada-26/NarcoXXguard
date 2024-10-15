@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "20171481728",
+    "firebase_url": "https://narcotixguard-ef8df-default-rtdb.firebaseio.com",
+    "project_id": "narcotixguard-ef8df",
+    "storage_bucket": "narcotixguard-ef8df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20171481728:android:3ecae01ae28936c95f3c65",
+        "android_client_info": {
+          "package_name": "com.example.narcotixguard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACUzlw2iF5P1jGRUP3CQPRCK45gY2WVjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
